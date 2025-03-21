@@ -26,10 +26,14 @@ print(p)'''
 
 cities = ["jaranwala", "faisalabad", "lahore","multan","islamabad","karachi","sahiwal","okara","mianchu","chichawatni"]
 city = []
-for city in cities:
-    cities = city[0:1]
-
+for i in cities:
+    city.insert(0,i)
+    print(city)
  
+for x in cities:
+    city = x[0:1].upper() + x[1:]
+    print(city)
+
 
 
 
