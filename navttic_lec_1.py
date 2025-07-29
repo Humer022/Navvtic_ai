@@ -13,3 +13,7 @@ a = 5 #int
 b = 6.79 #float
 c = "hello" #string 
 d = True   # boolean
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
