@@ -10,7 +10,7 @@ second_name = "sarwar"
 full_name = first_name + second_name 
 print(full_name)'''
 
-#we concatenate string by using first space
+#we concatenate string by using first spaces
 '''first_name = "humera"
 second_name = " sarwar"
 full_name = first_name + second_name 
