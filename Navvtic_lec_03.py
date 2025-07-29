@@ -97,5 +97,64 @@ num1 = "34.5"
 num1 = float(num1)'''
 
 
+#Even or Odd Number Checker
+"""number = int(input("Enter a number: "))
+
+if number % 2 == 0:
+    print("The number is even.")
+else:
+    print("The number is odd.")"""
+
+
+#Age Group Classifier
+"""age = int(input("Enter your age: "))
+
+if age < 13:
+    print("You are a child.")
+elif age <= 19:
+    print("You are a teenager.")
+else:
+    print("You are an adult.")"""
+
+
+#Number Comparison
+"""a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+if a > b:
+    print("First number is greater.")
+elif a < b:
+    print("Second number is greater.")
+else:
+    print("Both numbers are equal.")"""
+
+
+#Grade Evaluator
+"""score = int(input("Enter your score (0-100): "))
+
+if score >= 90:
+    print("Grade: A")
+elif score >= 80:
+    print("Grade: B")
+elif score >= 70:
+    print("Grade: C")
+elif score >= 60:
+    print("Grade: D")
+else:
+    print("Grade: F")"""
+
+
+#Leap Year Checker
+"""year = int(input("Enter a year: "))
+
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print("It's a leap year.")
+else:
+    print("It's not a leap year.")"""
+
+
+
+
+
 
 
