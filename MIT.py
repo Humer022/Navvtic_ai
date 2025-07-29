@@ -29,6 +29,4 @@ git status
 #Git clone
 #git clone
 
-#w3 school
-#programminze.com
-#MDN
+#important websites for pythib(w3school,programminze.com,MDN,codanics )
