@@ -1,7 +1,7 @@
 # we learn data types in python
 a = "string" #string
 b = True     #boolean
-c = 34      #int
+c = 34      #integer
 d = 34.5    #flot
 e = 1j      #complex
 f = ["amna","sara","rida"]      #list
