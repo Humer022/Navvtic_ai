@@ -135,6 +135,50 @@ print(set5,type(set5))
 set5 = tuple(set5)
 print(set5,type(set5))'''
 
+#Create and Add Elements to a Set
+hobbies = set()
+
+for i in range(3):
+    hobby = input(f"Enter hobby #{i+1}: ")
+    hobbies.add(hobby)
+
+print("Your hobbies are:", hobbies)
+
+#Remove an Item from a Set
+colors = {"red", "blue", "green", "yellow"}
+
+color_to_remove = input("Enter a color to remove: ")
+
+if color_to_remove in colors:
+    colors.remove(color_to_remove)
+    print("Updated colors:", colors)
+else:
+    print("Color not found in set.")
+
+
+#Find Common Items (Intersection)
+user1 = {"apple", "banana", "cherry"}
+user2 = {"banana", "kiwi", "cherry"}
+
+common_fruits = user1.intersection(user2)
+print("Common favorite fruits:", common_fruits)
+
+
+#Merge Sets Using Union
+set1 = {"Python", "Java", "C++"}
+set2 = {"JavaScript", "Python", "Go"}
+
+all_languages = set1.union(set2)
+print("Combined set of languages:", all_languages)
+
+#Find Items in One Set But Not the Other (Difference)
+math_students = {"Alice", "Bob", "Charlie", "David"}
+science_students = {"Charlie", "Eve", "Bob"}
+
+only_math = math_students.difference(science_students)
+print("Students who take only Math:", only_math)
+
+
 
 
 
