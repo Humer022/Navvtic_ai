@@ -37,3 +37,56 @@ for x in cities:
 
 
 
+#Append method in list
+fruits = []
+
+for i in range(3):
+    fruit = input(f"Enter fruit #{i+1}: ")
+    fruits.append(fruit)
+
+print("Your favorite fruits are:", fruits)
+
+
+#Remove an Item from a List
+colors = ['red', 'green', 'blue', 'yellow']
+
+print("Current colors:", colors)
+color_to_remove = input("Enter a color to remove: ")
+
+if color_to_remove in colors:
+    colors.remove(color_to_remove)
+    print("Updated colors:", colors)
+else:
+    print("Color not found in the list.")
+
+# Pop the Last Item
+numbers = [10, 20, 30, 40, 50]
+
+print("Original list:", numbers)
+last_item = numbers.pop()
+print("Popped item:", last_item)
+print("List after pop:", numbers)
+
+
+#Insert an Item at a Specific Index
+animals = ['cat', 'dog', 'rabbit', 'parrot']
+print("Animals:", animals)
+
+new_animal = input("Enter a new animal: ")
+index = int(input("Enter index to insert at (0-4): "))
+
+if 0 <= index <= len(animals):
+    animals.insert(index, new_animal)
+    print("Updated list:", animals)
+else:
+    print("Invalid index.")
+
+#Merge Two Lists Using Extend
+fruits = ['apple', 'banana', 'mango']
+vegetables = ['carrot', 'broccoli', 'spinach']
+
+print("Fruits:", fruits)
+print("Vegetables:", vegetables)
+
+fruits.extend(vegetables)
+print("Combined list:", fruits)
