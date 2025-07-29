@@ -93,5 +93,83 @@ def cit():
             print("city is not clean")
 cit()
 
-#Assignment
-#x = 50 +70 -
+#Greeting Function
+def greet(name):
+    print(f"Hello, {name}! Welcome to the Python world.")
+
+greet("Alice")
+
+
+#Add Two Numbers
+def add(a, b):
+    return a + b
+
+result = add(10, 5)
+print("Sum:", result)
+
+#Check Prime Number
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+num = int(input("Enter a number: "))
+print(f"Is {num} a prime number? {is_prime(num)}")
+
+#Factorial Calculator
+def factorial(n):
+    result = 1
+    for i in range(2, n + 1):
+        result *= i
+    return result
+
+print("Factorial of 5 is:", factorial(5))
+
+
+#Find Maximum of Three Numbers
+def find_max(a, b, c):
+    return max(a, b, c)
+
+print("Maximum is:", find_max(23, 98, 12))
+
+# Palindrome Checker
+def is_palindrome(text):
+    text = text.lower()
+    return text == text[::-1]
+
+word = input("Enter a word: ")
+print(f"Is '{word}' a palindrome? {is_palindrome(word)}")
+
+
+#Simple Calculator (Function Menu)
+def add(x, y):
+    return x + y
+
+def subtract(x, y):
+    return x - y
+
+def multiply(x, y):
+    return x * y
+
+def divide(x, y):
+    return x / y if y != 0 else "Cannot divide by zero"
+
+print("Select operation: 1-Add 2-Subtract 3-Multiply 4-Divide")
+choice = input("Enter choice: ")
+
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+
+if choice == '1':
+    print("Result:", add(a, b))
+elif choice == '2':
+    print("Result:", subtract(a, b))
+elif choice == '3':
+    print("Result:", multiply(a, b))
+elif choice == '4':
+    print("Result:", divide(a, b))
+else:
+    print("Invalid choice")
