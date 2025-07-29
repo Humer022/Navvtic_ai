@@ -110,6 +110,103 @@ a =Car()
 a.setnew("humera",24)
 a.getNew()
 
+#Create a Simple Class and Object
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+    def display_info(self):
+        print(f"Brand: {self.brand}, Model: {self.model}")
+
+# Create object
+my_car = Car("Toyota", "Corolla")
+my_car.display_info()
+
+
+#Student Grade System
+class Student:
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+
+    def get_grade(self):
+        if self.marks >= 90:
+            grade = "A"
+        elif self.marks >= 80:
+            grade = "B"
+        elif self.marks >= 70:
+            grade = "C"
+        else:
+            grade = "D"
+        print(f"{self.name} scored {self.marks} and got grade {grade}")
+
+# Test
+s1 = Student("Alice", 88)
+s1.get_grade()
+
+
+#Bank Account Class
+class BankAccount:
+    def __init__(self, owner):
+        self.owner = owner
+        self.balance = 0
+
+    def deposit(self, amount):
+        self.balance += amount
+        print("Deposited:", amount)
+
+    def withdraw(self, amount):
+        if amount <= self.balance:
+            self.balance -= amount
+            print("Withdrawn:", amount)
+        else:
+            print("Insufficient funds.")
+
+    def check_balance(self):
+        print(f"{self.owner}'s Balance:", self.balance)
+
+# Test
+account = BankAccount("John")
+account.deposit(1000)
+account.withdraw(300)
+account.check_balance()
+
+#Class with Inheritance
+class Animal:
+    def make_sound(self):
+        print("Some generic sound")
+
+class Dog(Animal):
+    def make_sound(self):
+        print("Woof!")
+
+class Cat(Animal):
+    def make_sound(self):
+        print("Meow!")
+
+# Test
+d = Dog()
+c = Cat()
+d.make_sound()
+c.make_sound()
+
+#Rectangle Class with Area and Perimeter
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length * self.width
+
+    def perimeter(self):
+        return 2 * (self.length + self.width)
+
+# Test
+r = Rectangle(10, 5)
+print("Area:", r.area())
+print("Perimeter:", r.perimeter())
 
 
 
